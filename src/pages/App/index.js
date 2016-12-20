@@ -1,10 +1,10 @@
 import React from 'react';
 import {Spin, message} from 'antd';
-import Header from '../Header';
-import Footer from '../Footer';
-import Sidebar from '../Sidebar';
-import Login from '../Login';
-import Breadcrumb from '../Breadcrumb';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Sidebar from '../../components/Sidebar';
+import Login from '../../components/Login';
+import Breadcrumb from '../../components/Breadcrumb';
 import './index.less';
 import globalConfig from 'config.js';
 import ajax from '../../utils/ajax';
@@ -99,10 +99,8 @@ class App extends React.Component {
                 {this.state.loading ? '' : this.props.children}
               </div>
             </div>
-
-            <Footer />
+            <Footer/>
           </Spin>
-
         </div>
       </div>
     );
